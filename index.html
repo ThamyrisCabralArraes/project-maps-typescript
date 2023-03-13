@@ -14,12 +14,38 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <section class="listContainer">
+        <header>
+          <h2 id="listName">List</h2>
+          <button
+            class="button"
+            id="clearItemsButton"
+          >
+            Clear
+          </button>
+        </header>
+      </section>
 
-    <div
-      id="map"
-      style="height: 100%"
-    ></div>
+      <section class="listContainer">
+        <header>
+          <h2 id="listName">List</h2>
+          <input
+            type="text"
+            placeholder="Add Item"
+            id="newItemInput"
+          />
+          <button
+            class="button"
+            id="addItem"
+          >
+            Add Item
+          </button>
+        </header>
+      </section>
+    </div>
+
+    <ul id="listItem"></ul>
 
     <script
       type="module"
